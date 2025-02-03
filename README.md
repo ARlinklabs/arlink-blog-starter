@@ -66,7 +66,7 @@ A simple blog template that publishes to Arweave through Arlink integration.
 Deploy this starter with one click on [Arlink ⚡️](https://arlink.arweave.net):
 
 
-[<img src="https://54ugi5qdxqouztoufonytoe3doej553gtvjn46tcgq2v5jxlxy5q.arweave.net/7yhkdgO8HUzN1CubibibG4ie92adUt56YjQ1Xqbrvjs" style="border-radius: 8px;" />](https://arlink.arweave.net/)
+[<img src="https://54ugi5qdxqouztoufonytoe3doej553gtvjn46tcgq2v5jxlxy5q.arweave.net/7yhkdgO8HUzN1CubibibG4ie92adUt56YjQ1Xqbrvjs" style="border-radius: 10px;" />](https://arlink.arweave.net/)
 
 
 
