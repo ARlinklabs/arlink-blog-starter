@@ -1,50 +1,74 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <a href="https://arlink.arweave.net/">
+    <img alt="Gatsby" src="https://mha2gcfhs3ug7un2fjmqlhnb6tliiiydsw5cwolgi7xs2nkmoneq.arweave.net/YcGjCKeW6G_RuipZBZ2h9NaEIwOVuis5ZkfvLTVMc0k" width="60" style="border-radius: 10px;" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby's blog starter
+  Decentralized Blog Template
 </h1>
 
-Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+A simple blog template that publishes to Arweave through Arlink integration.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+## 🚀 Quick Start
 
-## 🚀 Quick start
-
-1.  **Create a Gatsby site.**
-
-    Use the Gatsby CLI ([install instructions](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-0/#gatsby-cli)) to create a new site, specifying the blog starter.
-
+1. **Clone and install**
     ```shell
-    # create a new Gatsby site using the blog starter
-    gatsby new my-blog-starter https://github.com/gatsbyjs/gatsby-starter-blog
+    git clone [your-repo-url]
+    cd arlink-blog
+    npm install
     ```
 
-1.  **Start developing.**
+2. **Add your blog posts**
+    - Navigate to `content/blog/`
+    - Create a new folder for each post (e.g., `my-post-name/`)
+    - Add an `index.md` file in each folder with your content:
+    ```markdown
+    ---
+    title: Your Post Title
+    date: "2024-03-21"
+    description: "Brief description of your post"
+    ---
 
-    Navigate into your new site’s directory and start it up.
+    Your blog content goes here...
+    ```
 
+3. **Preview locally**
     ```shell
-    cd my-blog-starter/
     gatsby develop
     ```
+    View at `http://localhost:8000`
 
-1.  **Open the source code and start editing!**
+4. **Publish to Arweave**
+    ```shell
+    git add .
+    git commit -m "Add new blog post"
+    git push
+    ```
+    Your changes will automatically deploy to Arweave through Arlink.
 
-    Your site is now running at `http://localhost:8000`!
+## 📁 Content Structure
 
-    Note: You'll also see a second link: `http://localhost:8000/___graphql`. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries).
+    content/
+    └── blog/
+        ├── post-1/
+        │   └── index.md
+        └── post-2/
+            └── index.md
 
-    Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+## 💡 Tips
+- Images should be placed in the same folder as your post's index.md
+- Use markdown formatting for your posts
+- Each post must have the frontmatter (title, date, description) as shown above
 
-## 🚀 Quick start (Netlify)
+## 🚀 Quick start (Arlink)
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+Deploy this starter with one click on [Arlink ⚡️](https://arlink.arweave.net):
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-blog)
+
+[<img src="https://54ugi5qdxqouztoufonytoe3doej553gtvjn46tcgq2v5jxlxy5q.arweave.net/7yhkdgO8HUzN1CubibibG4ie92adUt56YjQ1Xqbrvjs" style="border-radius: 8px;" />](https://arlink.arweave.net/)
+
+
 
 ## 🧐 What's inside?
 
@@ -64,21 +88,21 @@ A quick look at the top-level files and directories you'll see in a typical Gats
 
 1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
-1.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+1.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for "source code".
 
 1.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
 1.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 
-1.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail).
+1.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you'd like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail).
 
-1.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-1.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+
+
 
 1.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
 
-1.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+1.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project's name, author, etc). This manifest is how npm knows which packages to install for your project.
 
 1.  **`README.md`**: A text file containing useful reference information about your project.
 
@@ -90,10 +114,10 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-## 💫 Deploy
+## 💫 Deploy  
 
-[Build, Deploy, and Host On Netlify](https://netlify.com)
+[Build and Deploy on ARlink](https://arlink.arweave.net/)  
 
-The fastest way to combine your favorite tools and APIs to build the fastest sites, stores, and apps for the web. And also the best place to build, deploy, and host your Gatsby sites.
+The fastest way to deploy and permanently host your React, Next.js, and other front-end applications on the PermaWeb. ARlink ensures true decentralization and permanence, making it the best alternative to traditional hosting platforms like Netlify. Plus, with upcoming features like staging deployments and ARNS custom subdomains, ARlink is shaping the future of decentralized web hosting. 🚀
 
 <!-- AUTO-GENERATED-CONTENT:END -->
